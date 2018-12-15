@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+{% from "includes/formhelpers.html" import render_field %}
+
+<br><br>
+
+<h4>
+    <strong>
+        Müşteri Kaydı Oluşturun 
+    </strong>
+</h4>
+<hr>
+
+<form method="POST">
+
+    {{ render_field(form.name, class="form-control") }}
+    {{ render_field(form.email, class="form-control") }}
+    {{ render_field(form.tel, class="form-control") }}
+  
+    <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+</form>
+
+{% endblock body %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+  
+{% block body %}
+
+<br><br>
+
+<h5>
+    Hoşgeldin {{ session['email'] }}
+</h5>
+
+<br>
+
+<b>Uygulama hakkında kısa bilgilendirme</b>
+
+<ul>
+    <li>
+        Kayıt Ekle bölümünden müşteri kaydı ekleyebilirsiniz.
+    </li>
+    <li>
+        Kayıtları Gör bölümünden müşterileri görebilirsiniz.
+    </li>
+    <li>
+        Kayıtları Gör bölümünden müşteri silebilirsiniz.
+    </li>
+    <li>
+        Kayıt eklemek ve görüntülemek için giriş yapmanız gerekmektedir.
+    </li>
+</ul>
+
+{% endblock body %}
