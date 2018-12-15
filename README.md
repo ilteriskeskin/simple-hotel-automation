@@ -1,3 +1,3 @@
 ### Simple Hotel Automation 
 
-* Project write Flask microframework
+* Project written by Flask microframework
